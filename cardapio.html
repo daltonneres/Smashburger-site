@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cardápio | Smash Burger | O Melhor Hambúrguer da Cidade</title>
+    <link rel="icon" type="image/png" href="favicon.png" title="Big Burger">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <header class="menu-cardapio">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#lanches">Lanches</a></li>
+                <li><a href="#porcoes">Porções</a></li>
+                <li><a href="#doces">Doces</a></li>
+                <li><a href="#combos">Combos</a></li>
+                <li><a href="#bebidas">Bebidas</a></li>
+                <li><a href="#promocoes">Promoções</a></li>
+                <li><button id="btn-ver-carrinho">Ver Carrinho (<span id="contador-itens">0</span>)</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Lanches salgados -->
+        <section id="lanches">
+            <h2>Nossos Lanches</h2>
+            <ul class="lista-lanches">
+                <li class="lanche-item">
+                    <h3>Big Burger Clássico</h3>
+                    <p>Carne 150g, queijo cheddar, alface, tomate, maionese caseira</p>
+                    <span class="preco">R$ 25,00</span>
+                    <button class="btn-adicionar" data-produto="Big Burger Clássico"
+                        data-preco="25.00">Adicionar</button>
+                </li>
+                <li class="lanche-item">
+                    <h3>Cheddar Bacon</h3>
+                    <p>Carne 150g, queijo cheddar, bacon crocante, cebola caramelizada</p>
+                    <span class="preco">R$ 29,00</span>
+                    <button class="btn-adicionar" data-produto="Cheddar Bacon" data-preco="29.00">Adicionar</button>
+                </li>
+                <li class="lanche-item">
+                    <h3>Big Burger Duplo</h3>
+                    <p>Dois hambúrgueres 150g, queijo cheddar, alface, tomate, cebola</p>
+                    <span class="preco">R$ 32,00</span>
+                    <button class="btn-adicionar" data-produto="Big Burger Duplo" data-preco="32.00">Adicionar</button>
+                </li>
+                <li class="lanche-item">
+                    <h3>Chicken Burger</h3>
+                    <p>Peito de frango grelhado, queijo, alface, maionese de ervas</p>
+                    <span class="preco">R$ 27,00</span>
+                    <button class="btn-adicionar" data-produto="Chicken Burger" data-preco="27.00">Adicionar</button>
+                </li>
+                <li class="lanche-item">
+                    <h3>Veggie Burger</h3>
+                    <p>Hambúrguer de grão-de-bico, queijo vegano, alface, tomate</p>
+                    <span class="preco">R$ 26,00</span>
+                    <button class="btn-adicionar" data-produto="Veggie Burger" data-preco="26.00">Adicionar</button>
+                </li>
+                <li class="lanche-item">
+                    <h3>Cheeseburger Clássico</h3>
+                    <p>Carne 150g, queijo cheddar, picles, ketchup e mostarda</p>
+                    <span class="preco">R$ 24,00</span>
+                    <button class="btn-adicionar" data-produto="Cheeseburger Clássico"
+                        data-preco="24.00">Adicionar</button>
+                </li>
+                <li class="lanche-item">
+                    <h3>Bacon Egg Burger</h3>
+                    <p>Carne 150g, queijo, bacon, ovo frito, alface e molho especial</p>
+                    <span class="preco">R$ 33,00</span>
+                    <button class="btn-adicionar" data-produto="Bacon Egg Burger" data-preco="33.00">Adicionar</button>
+                </li>
+                <!-- Novos lanches -->
+                <li class="lanche-item">
+                    <h3>Mexicano Doritos</h3>
+                    <p>Carne 150g, queijo cheddar, alface, molho picante, Doritos triturados por cima</p>
+                    <span class="preco">R$ 31,00</span>
+                    <button class="btn-adicionar" data-produto="Mexicano Doritos" data-preco="31.00">Adicionar</button>
+                </li>
+                <li class="lanche-item">
+                    <h3>Spicy Burger</h3>
+                    <p>Carne 150g, queijo pepper jack, alface, pimenta jalapeño e molho especial</p>
+                    <span class="preco">R$ 30,00</span>
+                    <button class="btn-adicionar" data-produto="Spicy Burger" data-preco="30.00">Adicionar</button>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Porções e acompanhamentos -->
+        <section id="porcoes">
+            <h2>Porções e Acompanhamentos</h2>
+            <ul class="lista-lanches">
+                <li class="lanche-item">
+                    <h3>Porção de Batata Frita</h3>
+                    <p>Batatas crocantes, servidas quentinhas</p>
+                    <span class="preco">R$ 12,00</span>
+                    <button class="btn-adicionar" data-produto="Porção de Batata Frita"
+                        data-preco="12.00">Adicionar</button>
+                </li>
+                <li class="lanche-item">
+                    <h3>Anéis de Cebola</h3>
+                    <p>Anéis de cebola empanados, crocantes e dourados</p>
+                    <span class="preco">R$ 14,00</span>
+                    <button class="btn-adicionar" data-produto="Anéis de Cebola" data-preco="14.00">Adicionar</button>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Doces -->
+        <section id="doces">
+            <h2>Nossos Doces</h2>
+            <ul class="lista-lanches">
+                <li class="lanche-item">
+                    <h3>Hambúrguer Doce Nutella</h3>
+                    <p>Pão de brioche recheado com Nutella e morangos frescos</p>
+                    <span class="preco">R$ 15,00</span>
+                    <button class="btn-adicionar" data-produto="Hambúrguer Doce Nutella"
+                        data-preco="15.00">Adicionar</button>
+                </li>
+                <li class="lanche-item">
+                    <h3>Copo da Felicidade</h3>
+                    <p>Copo de sobremesa com chocolate, morango, leite condensado e granulado</p>
+                    <span class="preco">R$ 12,00</span>
+                    <button class="btn-adicionar" data-produto="Copo da Felicidade"
+                        data-preco="12.00">Adicionar</button>
+                </li>
+                <li class="lanche-item">
+                    <h3>Doce Baguete de Nutella</h3>
+                    <p>Baguete recheada com Nutella e morangos</p>
+                    <span class="preco">R$ 15,00</span>
+                    <button class="btn-adicionar" data-produto="Doce Baguete de Nutella"
+                        data-preco="15.00">Adicionar</button>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Bebidas -->
+        <section id="bebidas">
+            <h2>Nossas Bebidas</h2>
+            <ul class="lista-lanches">
+                <li class="lanche-item">
+                    <h3>Refrigerante 350ml</h3>
+                    <p>Cola geladinha, do jeito que a gente gosta</p>
+                    <span class="preco">R$ 7,00</span>
+                    <button class="btn-adicionar" data-produto="Refrigerante 350ml" data-preco="7.00">Adicionar</button>
+                </li>
+                <li class="lanche-item">
+                    <h3>Coca-Cola 1L</h3>
+                    <p>Refrescante, ideal para compartilhar</p>
+                    <span class="preco">R$ 12,00</span>
+                    <button class="btn-adicionar" data-produto="Coca-Cola 1L" data-preco="12.00">Adicionar</button>
+                </li>
+                <li class="lanche-item">
+                    <h3>Coca-Cola 2L</h3>
+                    <p>Refrigerante grande, perfeito para festas e grupos</p>
+                    <span class="preco">R$ 18,00</span>
+                    <button class="btn-adicionar" data-produto="Coca-Cola 2L" data-preco="18.00">Adicionar</button>
+                </li>
+                <li class="lanche-item">
+                    <h3>Coca-Cola 2,5L</h3>
+                    <p>Refrigerante extra grande, ideal para compartilhar com a galera</p>
+                    <span class="preco">R$ 22,00</span>
+                    <button class="btn-adicionar" data-produto="Coca-Cola 2,5L" data-preco="22.00">Adicionar</button>
+                </li>
+                <li class="lanche-item">
+                    <h3>Suco Natural Laranja</h3>
+                    <p>Suco fresquinho, sem conservantes</p>
+                    <span class="preco">R$ 9,00</span>
+                    <button class="btn-adicionar" data-produto="Suco Natural Laranja"
+                        data-preco="9.00">Adicionar</button>
+                </li>
+                <li class="lanche-item">
+                    <h3>Suco Natural Morango</h3>
+                    <p>Suco fresco de morango, sem conservantes</p>
+                    <span class="preco">R$ 10,00</span>
+                    <button class="btn-adicionar" data-produto="Suco Natural Morango"
+                        data-preco="10.00">Adicionar</button>
+                </li>
+                <li class="lanche-item">
+                    <h3>Chá Gelado</h3>
+                    <p>Refrescante e natural, sem açúcar</p>
+                    <span class="preco">R$ 6,00</span>
+                    <button class="btn-adicionar" data-produto="Chá Gelado" data-preco="6.00">Adicionar</button>
+                </li>
+                <li class="lanche-item">
+                    <h3>Água sem Gás 500ml</h3>
+                    <p>Água mineral fresca, ideal para se hidratar</p>
+                    <span class="preco">R$ 4,00</span>
+                    <button class="btn-adicionar" data-produto="Água sem Gás 500ml" data-preco="4.00">Adicionar</button>
+                </li>
+                <li class="lanche-item">
+                    <h3>Água com Gás 500ml</h3>
+                    <p>Água mineral fresca com gás, levemente efervescente</p>
+                    <span class="preco">R$ 6,00</span>
+                    <button class="btn-adicionar" data-produto="Água com Gás 500ml" data-preco="6.00">Adicionar</button>
+                </li>
+                <li class="lanche-item">
+                    <h3>Cerveja 350ml</h3>
+                    <p>Cerveja gelada, perfeita para acompanhar seu lanche</p>
+                    <span class="preco">R$ 8,00</span>
+                    <button class="btn-adicionar" data-produto="Cerveja 350ml" data-preco="8.00">Adicionar</button>
+                </li>
+                <li class="lanche-item">
+                    <h3>Cerveja 1L</h3>
+                    <p>Cerveja gelada em litro, ideal para compartilhar</p>
+                    <span class="preco">R$ 18,00</span>
+                    <button class="btn-adicionar" data-produto="Cerveja 1L" data-preco="18.00">Adicionar</button>
+                </li>
+                <li class="lanche-item">
+                    <h3>Energético Lata 250ml</h3>
+                    <p>Energético geladinho para dar aquele boost de energia</p>
+                    <span class="preco">R$ 9,00</span>
+                    <button class="btn-adicionar" data-produto="Energético Lata 250ml"
+                        data-preco="9.00">Adicionar</button>
+                </li>
+                <li class="lanche-item">
+                    <h3>Energético 2L</h3>
+                    <p>Energético grande para compartilhar ou para várias doses</p>
+                    <span class="preco">R$ 35,00</span>
+                    <button class="btn-adicionar" data-produto="Energético 2L" data-preco="35.00">Adicionar</button>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Combos -->
+        <section id="combos">
+            <h2>Combos Especiais</h2>
+            <ul class="lista-lanches">
+                <li class="lanche-item">
+                    <h3>Combo Big Burger Clássico</h3>
+                    <p>Big Burger Clássico + Fritas + Refrigerante 350ml</p>
+                    <span class="preco">R$ 35,00</span>
+                    <button class="btn-adicionar" data-produto="Combo Big Burger Clássico"
+                        data-preco="35.00">Adicionar</button>
+                </li>
+                <li class="lanche-item">
+                    <h3>Combo Cheddar Bacon</h3>
+                    <p>Cheddar Bacon + Fritas + Suco Natural</p>
+                    <span class="preco">R$ 39,00</span>
+                    <button class="btn-adicionar" data-produto="Combo Cheddar Bacon"
+                        data-preco="39.00">Adicionar</button>
+                </li>
+                <li class="lanche-item">
+                    <h3>Combo Chicken Burger</h3>
+                    <p>Chicken Burger + Anéis de Cebola + Chá Gelado</p>
+                    <span class="preco">R$ 37,00</span>
+                    <button class="btn-adicionar" data-produto="Combo Chicken Burger"
+                        data-preco="37.00">Adicionar</button>
+                </li>
+                <li class="lanche-item">
+                    <h3>Combo Veggie Burger</h3>
+                    <p>Veggie Burger + Porção de Batata Frita + Suco Natural Morango</p>
+                    <span class="preco">R$ 38,00</span>
+                    <button class="btn-adicionar" data-produto="Combo Veggie Burger"
+                        data-preco="38.00">Adicionar</button>
+                </li>
+                <li class="lanche-item">
+                    <h3>Combo Doce Nutella</h3>
+                    <p>Hambúrguer Doce Nutella + Copo da Felicidade</p>
+                    <span class="preco">R$ 25,00</span>
+                    <button class="btn-adicionar" data-produto="Combo Doce Nutella"
+                        data-preco="25.00">Adicionar</button>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Promoções -->
+        <section id="promocoes">
+            <h2>Promoções do Dia</h2>
+            <p class="data-promo">
+                Promoções válidas apenas durante nosso horário de funcionamento — <span id="data-atual"></span> — das
+                18:00 às 23:00
+            </p>
+            <p class="info-loja">
+                📍 Rua Exemplo, 123 - Centro, Cidade/UF<br>
+                🕒 Horário de funcionamento: Todos os dias das 18:00 às 23:00
+            </p>
+            <ul class="lista-lanches">
+                <li class="lanche-item">
+                    <h3>Combo Clássico com 10% OFF</h3>
+                    <p>Big Burger Clássico + Fritas + Refrigerante 350ml</p>
+                    <span class="preco">R$ 34,20</span>
+                    <button class="btn-adicionar" data-produto="Combo Clássico com 10% OFF"
+                        data-preco="34.20">Adicionar</button>
+                </li>
+                <li class="lanche-item">
+                    <h3>Cheddar Bacon + Suco Natural</h3>
+                    <p>Combo especial</p>
+                    <span class="preco">R$ 35,00</span>
+                    <button class="btn-adicionar" data-produto="Cheddar Bacon + Suco Natural"
+                        data-preco="35.00">Adicionar</button>
+                </li>
+                <li class="lanche-item">
+                    <h3>Porção de Batata Frita + Anéis de Cebola</h3>
+                    <p>Promoção de acompanhamentos: leve os dois por um preço especial</p>
+                    <span class="preco">R$ 22,00</span>
+                    <button class="btn-adicionar" data-produto="Porção de Batata Frita + Anéis de Cebola"
+                        data-preco="22.00">Adicionar</button>
+                </li>
+                <li class="lanche-item">
+                    <h3>Hambúrguer Doce Nutella com Morango</h3>
+                    <p>Leve a sobremesa com desconto especial!</p>
+                    <span class="preco">R$ 12,00</span>
+                    <button class="btn-adicionar" data-produto="Hambúrguer Doce Nutella com Morango"
+                        data-preco="12.00">Adicionar</button>
+                </li>
+                <li class="lanche-item">
+                    <h3>Combo Família</h3>
+                    <p>2 Big Burgers + 2 Porções de Batata Frita + 2 Refrigerantes 2L</p>
+                    <span class="preco">R$ 85,00</span>
+                    <button class="btn-adicionar" data-produto="Combo Família" data-preco="85.00">Adicionar</button>
+                </li>
+                <li class="lanche-item">
+                    <h3>Combo Festa</h3>
+                    <p>3 Cheddar Bacon + 3 Anéis de Cebola + 3 Energéticos 2L</p>
+                    <span class="preco">R$ 120,00</span>
+                    <button class="btn-adicionar" data-produto="Combo Festa" data-preco="120.00">Adicionar</button>
+                </li>
+            </ul>
+        </section>
+
+        <script>
+            // Pega a data atual e coloca na seção promoções
+            const dataAtualEl = document.getElementById('data-atual');
+            const hoje = new Date();
+            const opcoes = { day: '2-digit', month: '2-digit', year: 'numeric' };
+            dataAtualEl.textContent = hoje.toLocaleDateString('pt-BR', opcoes);
+        </script>
+    </main>
+
+    <div id="modal-carrinho" class="modal-carrinho hidden">
+        <div class="modal-content">
+            <h2>Seu Carrinho</h2>
+            <ul id="lista-carrinho"></ul>
+            <p id="total-carrinho">Total: R$ 0,00</p>
+
+            <div class="opcoes-pedido">
+                <label for="tipo-entrega">Tipo de Pedido:</label><br />
+                <select id="tipo-entrega" name="tipo-entrega">
+                    <option value="Entrega">Entrega (+R$ 8,00)</option>
+                    <option value="Retirada">Retirada</option>
+                </select>
+
+                <br /><br />
+
+                <!-- Endereço aparece só se for entrega -->
+                <div id="campo-endereco" style="display: none;">
+                    <label for="endereco">Endereço de Entrega:</label><br />
+                    <input type="text" id="endereco" name="endereco" placeholder="Rua, número, bairro, cidade" />
+                </div>
+
+                <br />
+
+                <label for="forma-pagamento">Forma de Pagamento:</label><br />
+                <select id="forma-pagamento" name="forma-pagamento">
+                    <option value="Dinheiro">Dinheiro</option>
+                    <option value="Pix">Pix</option>
+                    <option value="Cartão de Crédito">Cartão de Crédito</option>
+                    <option value="Cartão de Débito">Cartão de Débito</option>
+                </select>
+
+                <br /><br />
+
+                <label for="troco">Precisa de troco? Se sim, informe o valor:</label><br />
+                <input type="text" id="troco" name="troco" placeholder="Ex: 50,00" />
+            </div>
+
+            <button id="btn-enviar-whatsapp">Enviar Pedido via WhatsApp</button>
+            <button id="btn-limpar-carrinho">Limpar Carrinho</button>
+            <button id="btn-fechar-carrinho">Fechar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <footer>
+        &copy; 2025 Smash Burger - Hambúrguers para o tamanho da sua fome - Todos os direitos reservados.
+    </footer>
+
+</body>
+
+</html>
