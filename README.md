@@ -1,6 +1,6 @@
 # Smash Burger - Site Oficial
 
-Projeto simples de site para a lanchonete Big Burger, com cardápio digital dividido em lanches, combos, bebidas e promoções.
+Projeto simples de site para a hamburgueria Smash Burger, com cardápio digital dividido em lanches, combos, bebidas e promoções.
 
 - Interface escura, visual raiz e direto ao ponto.  
 - Carrinho com integração para envio de pedido via WhatsApp.  
