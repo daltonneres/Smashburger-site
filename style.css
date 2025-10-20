@@ -536,3 +536,110 @@ section#sorvetes .btn-ver-cardapio:hover {
 #pasteis #tamanho-pastel:hover {
   background-color: #e6b800;
 }
+
+/* ===== RESPONSIVIDADE ===== */
+@media screen and (max-width: 1024px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+    header p {
+        font-size: 1.1rem;
+    }
+    .btn-ver-cardapio {
+        padding: 12px 24px;
+        font-size: 0.95rem;
+    }
+    section h2 {
+        font-size: 2.2rem;
+        margin-bottom: 30px;
+    }
+    .lanche-item h3 {
+        font-size: 1.3rem;
+    }
+    .lanche-item p, .preco {
+        font-size: 1rem;
+    }
+    .btn-adicionar {
+        padding: 8px 20px;
+        font-size: 0.95rem;
+        min-width: 100px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu-cardapio nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .logo img {
+        width: 100px;
+        margin-bottom: 20px;
+    }
+    header h1 {
+        font-size: 2rem;
+    }
+    header p {
+        font-size: 1rem;
+    }
+    section h2 {
+        font-size: 2rem;
+    }
+    .btn-ver-cardapio {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    .lanche-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .preco {
+        margin-right: 0;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+    .btn-adicionar {
+        width: 100%;
+        min-width: auto;
+    }
+    .modal-content {
+        width: 95%;
+    }
+    #btn-enviar-whatsapp, #btn-fechar-carrinho, #btn-limpar-carrinho {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 40px 15px 30px;
+    }
+    .logo img {
+        width: 80px;
+    }
+    header h1 {
+        font-size: 1.6rem;
+    }
+    header p {
+        font-size: 0.9rem;
+    }
+    section h2 {
+        font-size: 1.6rem;
+    }
+    .btn-ver-cardapio {
+        padding: 8px 16px;
+        font-size: 0.85rem;
+    }
+    .lanche-item h3 {
+        font-size: 1.2rem;
+    }
+    .lanche-item p, .preco {
+        font-size: 0.95rem;
+    }
+    .btn-adicionar {
+        padding: 8px;
+        font-size: 0.85rem;
+    }
+    #promocoes {
+        padding: 40px 15px;
+    }
+}
